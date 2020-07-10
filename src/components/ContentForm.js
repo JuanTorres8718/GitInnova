@@ -2,8 +2,12 @@ import React, { useState } from 'react'
 import { useHistory } from "react-router-dom"
 import Cookies from 'universal-cookie'
 import '../style/ContentForm.css'
+import ComponentHeader from './ComponentHeader'
+import ComponentForm from './ComponentForm'
+import ContentSearch from './ContentSearch'
 
 const ContentForm = () => {
+    const cookies = new Cookies()
     const [usuario, setUsuario] = useState({})
     let history = useHistory();
 
@@ -16,102 +20,42 @@ const ContentForm = () => {
 
     const handleSubmit = e => {
         e.preventDefault()
-        const cookies = new Cookies()
-        cookies.set('Name', usuario.Name, { path : '/Search' })
-        cookies.set('SurName', usuario.SurName, { path : '/Search' })
-        cookies.set('Document', usuario.Document, { path : '/Search' })
-        cookies.set('Birthday', usuario.Birthday, { path : '/Search' })
-        cookies.set('Email', usuario.Email, { path : '/Search' })
-        cookies.set('User', usuario.User, { path : '/Search' })
-        history.push('/Search')
+        cookies.set('Name', usuario.Name, { path : '/' })
+        cookies.set('SurName', usuario.SurName, { path : '/' })
+        cookies.set('Document', usuario.Document, { path : '/' })
+        cookies.set('Birthday', usuario.Birthday, { path : '/' })
+        cookies.set('Email', usuario.Email, { path : '/' })
+        cookies.set('User', usuario.User, { path : '/' })
+        history.push('/')
     }
 
     return (
-        <div 
-        className="content-form d-flex
-        justify-content-center 
-        align-items-center"
-        >
-            <form onSubmit={handleSubmit} 
-            className="form-git mt-4 col-10 col-md-8 col-lg-6"
-            >
-                <div className="title-form text-center">
-                    <h3>Bienvenido a GitInnova</h3>
-                    <p>Diligencia el formulario</p>
-                </div>
-                <div className="row">
-                    <div className="form-group col-6">
-                        <label htmlFor="nombre">Nombres</label>
-                        <input 
-                        type="text" 
-                        className="form-control" 
-                        id="nombre" 
-                        onChange={(event) => {
-							handleChange('Name',event.target.value)
-						}}
-                        />
+        <div className="content-fluid" id='font-text'>
+            <ComponentHeader />
+            <h2 className='text-center font-weight-bold'>Bienvenido a GitInnova</h2>
+            <div className='row' id='margin-row'>
+                <div className="col-12 col-md-12 col-lg-6 
+                d-flex justify-content-center flex-column height-register">
+                    <div className="title-form text-center">
+                        <h5 class="font-weight-bold">Registra la información del candidato</h5>
                     </div>
-                    <div className="form-group col-6">
-                        <label htmlFor="apellidos">Apellidos</label>
-                        <input 
-                        type="text"
-                        className="form-control"
-                        id="apellidos"
-                        onChange={(event) => {
-							handleChange('SurName',event.target.value)
-						}}
+                    <div className=' d-flex justify-content-center align-items-center mt-5'>
+                        <ComponentForm 
+                        handleChange = {handleChange} 
+                        handleSubmit = {handleSubmit}
                         />
-                    </div>
-                    <div className="form-group col-12">
-                        <label htmlFor="cedula">Cedula</label>
-                        <input 
-                        type="number"
-                        className="form-control"
-                        id="cedula"
-                        onChange={(event) => {
-							handleChange('Document',event.target.value)
-						}}
-                        />
-                    </div>
-                    <div className="form-group col-12">
-                        <label htmlFor="birthday">Fecha de nacimiento</label>
-                        <input 
-                        type="date"
-                        className="form-control"
-                        id="birthday"
-                        onChange={(event) => {
-							handleChange('Birthday',event.target.value)
-						}}
-                        />
-                    </div>
-                    <div className="form-group col-12">
-                        <label htmlFor="email">Correo Electrónico</label>
-                        <input
-                        type="email"
-                        className="form-control"
-                        id="email"
-                        onChange={(event) => {
-							handleChange('Email',event.target.value)
-						}}
-                        />
-                    </div>
-                    <div className="form-group col-12">
-                        <label htmlFor="user">Usuario GitHub</label>
-                        <input
-                        type="text"
-                        className="form-control"
-                        id="user"
-                        onChange={(event) => {
-							handleChange('User',event.target.value)
-						}}
-                        />
-                    </div>
-                    <div className="text-center col-12">
-                        <button type="submit" className="btn btn-primary">Enviar</button>
                     </div>
                 </div>
-            </form>
+                <div className='col-12 col-md-12 col-lg-6 d-flex justify-content-center'>
+                    <ContentSearch />
+                </div>
+            </div>
+            <div className='form-group footer'>
+                <p className='text-center p-2'> 
+                &copy;Derechos reservados por Juan Torres</p>
+            </div>
         </div>
+        
     )
 }
 export default ContentForm

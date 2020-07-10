@@ -1,0 +1,21 @@
+@media only screen and (max-width:509){
+    .btn-search{
+        right: 30%;
+        top: 65px;
+    }
+}
+
+@media only screen and (min-width:510) and (max-width:990){
+    .btn-search{
+        top: 40px;
+    }
+}
+
+@media only screen and (min-width:990) and (max-width:1020){
+    body{
+        background-color: black;
+    }
+    .btn-search{
+        top: 62px;
+    }
+}
