@@ -32,7 +32,7 @@ const ComponentForm = ({handleChange, handleSubmit, valueUser}) => {
                     />
                 </div>
                 <div className="form-group col-12">
-                    <label className='secundary-text' htmlFor="cedula">Cedula</label>
+                    <label className='secundary-text' htmlFor="cedula">Cédula</label>
                     <input 
                     type="number"
                     className="form-control"
