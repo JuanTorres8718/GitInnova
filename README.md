@@ -19,6 +19,6 @@ Nota: también puedes ejecutar el comando con la terminal de visual studio code
 Después de instalar todos los paquetes, ejecutamos el comando npm start para ver la página desplegada en el localhost.
 
 
-### `Pagina desplegada en Heroku`
+### `Página desplegada en Heroku`
 
 [https://gitinnova.herokuapp.com/](https://gitinnova.herokuapp.com/) Acá podras encontrar la página desplegada por si deseas mirarla primero
