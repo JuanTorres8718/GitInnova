@@ -1,4 +1,6 @@
-Bienvenido a GitInnova Donde podras Registrar un candidato de GitHub y podras observarlo en la parte del encabezado ademas de buscar todos los repositorios del usuario que desees buscar, ademas de un filtro de busqueda que podras encontrar los primeros 5 más importantes.
+# Bienvenido a GitInnova Donde 
+
+Acá podras Registrar un candidato de GitHub y podras observarlo en la parte del encabezado ademas de buscar todos los repositorios del usuario que desees buscar, ademas de un filtro de busqueda que podras encontrar los primeros 5 más importantes.
 
 ## Pasos para ejecutar el proyecto
 
