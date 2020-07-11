@@ -2,14 +2,21 @@ Bienvenido a GitInnova Donde podras Registrar un candidato de GitHub y podras ob
 
 ## Pasos para ejecutar el proyecto
 
-Primero clona el proyecto: [https://github.com/JuanTorres8718/GitInnova.git](https://github.com/JuanTorres8718/GitInnova.git)
+### `git clone`
+
+Primero clona el proyecto: [https://github.com/JuanTorres8718/GitInnova.git](https://github.com/JuanTorres8718/GitInnova.git) usando la consola de windows (cmd) o la consola de git, en la ruta o carpeta que desees clonar el proyecto
 
 ### `npm i`
 
-Ejecuta el comando npm i para poder instalar los paquetes necesarios para poder usar la aplicación.
+Luego nos dirigimos dentro del proyecto con la consola ya sea de Windows o Git y ejecuta el comando npm i para poder instalar los paquetes necesarios para poder usar la aplicación.
+Nota: también puedes ejecutar el comando con la terminal de visual studio code
 
 
 ### `npm start`
 
 Después de instalar todos los paquetes, ejecutamos el comando npm start para ver la página desplegada en el localhost.
 
+
+### `Pagina desplegada en Heroku`
+
+[https://gitinnova.herokuapp.com/](https://gitinnova.herokuapp.com/) Acá podras encontrar la página desplegada por si deseas mirarla primero
