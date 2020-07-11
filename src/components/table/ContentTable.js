@@ -2,7 +2,6 @@ import React from 'react'
 import RowTable from './RowTable'
 
 const ContentTable = ({repos, search}) => {
-    console.log(repos)
     return (
         <React.Fragment>
             <form className="form-inline">
@@ -16,7 +15,7 @@ const ContentTable = ({repos, search}) => {
             </form>
             <div className='table-responsive height-table'>
                 <table className="table margin-table">
-                    <thead className='thead-dark'>
+                    <thead className='thead primary-color text-color'>
                         <tr>
                         <th scope="col">Nombre</th>
                         <th scope="col">Descripcion</th>

@@ -14,7 +14,9 @@ const Pagination = ({ reposPerPage, totalRepos, paginate}) => {
                 {pageNumbers.map(number=>(
                     <li key={number} className='page-item'>
                         <a onClick={(e) => paginate(number, e)} 
-                        href='!#' className='page-link'>
+                        href='!#' className='page-link'
+                        style={{color: '#24292e'}}
+                        >
                             {number}
                         </a>
                     </li>

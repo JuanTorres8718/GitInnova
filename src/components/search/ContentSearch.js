@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import ContentTable from './ContentTable'
-import Pagination from './Pagination'
+import ContentTable from '../table/ContentTable'
+import Pagination from '../table/Pagination'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import '../style/ContentSearch.css'
 
 
 const ContentSearch = () => {
@@ -80,7 +79,7 @@ const ContentSearch = () => {
     return ( 
         <div className="col-12 mt-4">
             <div className="content-user-github">
-                <h5 class="text-center font-weight-bold">Buscador de repositorios de usuarios de GitHub</h5>
+                <h5 className="text-center secundary-text">Buscador de repositorios de usuarios de GitHub</h5>
                 <div className='form-group d-flex justify-content-center'>
                     <input
                         type="text"
@@ -91,7 +90,7 @@ const ContentSearch = () => {
                         }}
                     />
                     <button className='btn-search' onClick={handleSubmit}>
-                        <FontAwesomeIcon icon={faSearch}/>
+                        <FontAwesomeIcon className='icon-color-search' icon={faSearch}/>
                     </button>
                 </div>
             </div>

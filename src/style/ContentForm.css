@@ -24,33 +24,133 @@
 
 .btn-search{
     border: 0px;
-    background: white;
+    background: #3f4448;
     position: absolute;
     right: 28%;
     top: 40px;
     width: 6%;
 }
 
+.btn-search:focus{
+    outline: none;
+}
+
 .height-table{
-    max-height: 56vh;
+    max-height: 50vh;
     margin-top: 62px;
 }
 
-@media only screen and (max-width:509){
+#color-light{
+    color: white;
+    margin: 3px;
+    margin-left: 0px;
+}
+
+#user{
+    border-radius: 20px;
+    background-color: #3f4448;
+    color: #cfd0d1;
+}
+
+#user:focus{
+    outline: none;
+    /* border: 0px; */
+    border-color: white;
+}
+
+.icon-color-search{
+    color: #cfd0d1;
+}
+
+#color-btn-light{
+    background-color: white;
+}
+
+.margin-p-header{
+    margin: 0px;
+}
+
+.btn-color-register{
+    background-color: #3f4448;
+    color: white;
+    border-color: #3f4448;
+    width: 39%;
+    font-size: 21px;
+    border-radius: 17px;
+}
+
+.primary-color{
+    background-color:#24292e;
+}
+
+.primary-text{
+    color: #212121;
+}
+
+.light-primary-color{
+    background-color: #3f4448;
+}
+
+
+.text-color{
+    color: white;
+}
+
+.secundary-text{
+    color: #757575;
+}
+
+.color-text-table{
+    color: #cfd0d1
+}
+
+.color-a-table:focus{
+    color: #cfd0d1;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:480px){
     .btn-search{
         right: 30%;
         top: 65px;
     }
 }
 
-@media only screen and (min-width:510) and (max-width:990){
+@media only screen and (max-width: 375px){
+    #search-input {
+        right: 112px;
+        top: 146px;
+    }
+
+    .nav-pagination {
+        top: 100px;
+        left: 15px;
+    }
+
+    .height-table {
+        margin-top: 85px;
+    }
+
+    .margin-search{
+        margin-top: -60px
+    }
+}
+
+@media only screen and (max-width:990px){
+    .margin-p-header{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+/* @media only screen and (min-width:480px) and (max-width:990px){
     .btn-search{
         top: 40px;
     }
 }
 
-@media only screen and (min-width:990) and (max-width:1020){
+@media only screen and (min-width:990px) and (max-width:1020px){
     .btn-search{
         top: 62px;
     }
-}
+} */
