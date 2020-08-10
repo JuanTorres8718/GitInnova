@@ -53,7 +53,7 @@ const ContentForm = () => {
             >
                 Bienvenido a GitInnova
             </h2>
-            <p className='text-center'>Podrás registrar un usuario y lo visualizarás en la sección superior con sus datos ademas buscar los repositorios de cualquier usuario que este en GitHub</p>
+            <p className='text-center'>Podrás registrar un usuario y lo visualizarás en la sección superior con sus datos además buscar los repositorios de cualquier usuario que este en GitHub</p>
             <div className='row' id='margin-row'>
                 <div className="col-12 col-md-12 col-lg-6 height-register">
                     <div className='col-12 mt-4 d-flex justify-content-center flex-column'>
